@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-      <url>2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-      
-        <content type="html"><![CDATA[<p>1.切换到root用户：  su+密码</p><p>2.关闭系统：  init 0</p><p>3.重启系统：  reboot</p><p>4.显示工作目录： pwd</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<p>1.切换到root用户：  su+密码</p>
+<p>2.关闭系统：  init 0</p>
+<p>3.重启系统：  reboot</p>
+<p>4.显示工作目录： pwd</p>
+]]></content>
+  </entry>
 </search>
