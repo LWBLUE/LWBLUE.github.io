@@ -508,11 +508,11 @@
                 <p>1.Hydra,俗称九头蛇，用来进行暴力破解。</p>
 <p>2.使用介绍:  hydra  -L(与小写的l的区别是使用的是用户名本)  -l(使用单个的用户名)  -P(使用密码本)  -p(使用的单个密码)   -e nsr(n表示空密码登录，s表示使用pass和/登录，r表示反向登录)  -o(指定结果输出文件)   -f(找到正确的密码和用户名后终止破解)   -t(指定进程数)   -w(指定响应的最大等待时间)  -M(服务器列表IP列表)  -vV(v表示详细模式；-V表示每次登录成功的用户名和密码)    -I(大写的i表示忽略现有的恢复文件)</p>
 <p>3.举例：</p>
-<p>​      <FTP></p>
+<p>​      <FTP></FTP></p>
 <p>hydra -I -f -l wang -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -o E:\桌面\hack\workspace\ftp-pwd-result.txt <a href="ftp://192.168.27.46/">ftp://192.168.27.46</a></p>
-<p>​       <ssh></p>
+<p>​       <ssh></ssh></p>
 <p>hydra -I -t 1 -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -M E:\桌面\hack\workspace\22-output.txt -o E:\桌面\hack\workspace\ssh-pwd-result.txt ssh</p>
-<p>​      <telnet></p>
+<p>​      <telnet></telnet></p>
 <p>hydra -I -f -vV -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt  -o E:\桌面\hack\workspace\telnet-pwd-result.txt  telnet://192.168.27.32</p>
 
                 

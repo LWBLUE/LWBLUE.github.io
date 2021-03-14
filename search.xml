@@ -2,64 +2,6 @@
 <search>
   <entry>
     <title></title>
-    <url>/2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<p>1.切换到root用户：  su+密码</p>
-<p>2.关闭系统：  init 0</p>
-<p>3.重启系统：  reboot</p>
-<p>4.显示工作目录： pwd</p>
-<p>5.详细显示文件：ls -l</p>
-<p>6.显示隐藏文件： ls -a</p>
-<p>7.显示系统日期： date</p>
-<p>8.删除文件：rm -f file1</p>
-<p>9.删除目录： rmdir -rf dir1</p>
-<p>10.创建目录： mkdir  dir1</p>
-<p>11.重命名/移动一个目录：mv dir1 new-dir</p>
-<p>12.复制一个文件： cp file1 file2</p>
-<p>13.复制一个目录下的所有文件到当前目录：cp dir/* .</p>
-<p>14.搜索文件：find /  -name file1</p>
-<p>15.创建/删除一个新用户：useradd user1/userdel -r user1</p>
-<p>16.解压/压缩zip文件： unzip filename.zip/zip filename.zip Dirname</p>
-<p>17.解压/压缩gz文件： gunzip filename.gz/gzip filename</p>
-<p>18.解压/压缩tar文件： tar xvf filename.tar/tar cvf filename.tar Dirname</p>
-<p>19.解压/压缩rar文件： rar a filename.rar/rar e filename.rar</p>
-<p>20.解压/压缩.tar.gz文件： tar zxvf filename.tar.gz/tar zcvf filename.tar.gz</p>
-<p>21.提权：chmod u+w /etc/sudoer[u代表user,g代表group，o代表other，a代表所有][r,w,x分别代表读，写，执行][u对应的r,w,x为1，2，3；g对应的r,w,x,为4，5，6；o对应的r,w,x,为7，8，9][a+x可以写为+x]</p>
-<p>22.比较两个文件的差异并输出：diff  -u  原文件1  源文件2  &gt; 目标文件 【将原文件1和原文件2对比的结果输入到目标文件】【“-”表示在原文件中，“+”表示在目标文件中；以空格开始的行表示在两个文件中都出现相同的内容】</p>
-<p>23.查看文件: more 文件名</p>
-<p>24.dpkg  -i  xxx.deb 【安装软件，其中xxx.deb为压缩包】</p>
-<p>25.top  【类似于Win10的任务管理器】</p>
-<p>26.df   【查看磁盘的使用率，其中的/dev/sdal显示的是内存的使用量】</p>
-<p>27.apt-get clean 【清理系统垃圾】</p>
-<p>28.touch  filename 【创建文件】</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
-    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
-<p>2.sh文件权限不够：chmod +x  **.sh</p>
-<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
-<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
-<p>5.tomcat的用户名和密码都是tomcat</p>
-<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2021/03/14/hydra/</url>
-    <content><![CDATA[<p>1.Hydra,俗称九头蛇，用来进行暴力破解。</p>
-<p>2.使用介绍:  hydra  -L(与小写的l的区别是使用的是用户名本)  -l(使用单个的用户名)  -P(使用密码本)  -p(使用的单个密码)   -e nsr(n表示空密码登录，s表示使用pass和/登录，r表示反向登录)  -o(指定结果输出文件)   -f(找到正确的密码和用户名后终止破解)   -t(指定进程数)   -w(指定响应的最大等待时间)  -M(服务器列表IP列表)  -vV(v表示详细模式；-V表示每次登录成功的用户名和密码)    -I(大写的i表示忽略现有的恢复文件)</p>
-<p>3.举例：</p>
-<p>​      <FTP></p>
-<p>hydra -I -f -l wang -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -o E:\桌面\hack\workspace\ftp-pwd-result.txt <a href="ftp://192.168.27.46/">ftp://192.168.27.46</a></p>
-<p>​       <ssh></p>
-<p>hydra -I -t 1 -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -M E:\桌面\hack\workspace\22-output.txt -o E:\桌面\hack\workspace\ssh-pwd-result.txt ssh</p>
-<p>​      <telnet></p>
-<p>hydra -I -f -vV -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt  -o E:\桌面\hack\workspace\telnet-pwd-result.txt  telnet://192.168.27.32</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2021/03/14/crunch/</url>
     <content><![CDATA[]]></content>
   </entry>
@@ -68,6 +10,17 @@
     <url>/2021/03/14/GitHack/</url>
     <content><![CDATA[<p>1.进入GitHack目录</p>
 <p>2.输入 python  GitHack.py   网址/.git[使用GitHack脚本查看是否有git泄露]</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/Hexo/</url>
+    <content><![CDATA[<p>1.hexo clean :清除缓存文件</p>
+<p>2.hexo g:生成博客文件</p>
+<p>3.hexo s:启动本地服务器通过，localhost:4000访问</p>
+<p>4.hexo d:发布到服务器</p>
+<p>5.hexo  g  -d :组合命令，生成文件并发表</p>
+<p>6.hexo n   “articalname” :创建新的文章</p>
 ]]></content>
   </entry>
   <entry>
@@ -103,6 +56,16 @@
   </entry>
   <entry>
     <title></title>
+    <url>/2021/03/14/Redis/</url>
+    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
+<p>2.启动客户端Redis</p>
+<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
+<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
+<p>​            </p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2021/03/14/Sqlmap/</url>
     <content><![CDATA[<p>1.参数：</p>
 <p>​      -u 【指定url】</p>
@@ -117,6 +80,53 @@
 <p>​         –random-agent  【构造随机的user-agent】</p>
 <p>​         –threads  【请求并发量】</p>
 <p>​          -r  “C:\tools….txt”  【POST注入，xxx.txt为抓包的内容】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/hydra/</url>
+    <content><![CDATA[<p>1.Hydra,俗称九头蛇，用来进行暴力破解。</p>
+<p>2.使用介绍:  hydra  -L(与小写的l的区别是使用的是用户名本)  -l(使用单个的用户名)  -P(使用密码本)  -p(使用的单个密码)   -e nsr(n表示空密码登录，s表示使用pass和/登录，r表示反向登录)  -o(指定结果输出文件)   -f(找到正确的密码和用户名后终止破解)   -t(指定进程数)   -w(指定响应的最大等待时间)  -M(服务器列表IP列表)  -vV(v表示详细模式；-V表示每次登录成功的用户名和密码)    -I(大写的i表示忽略现有的恢复文件)</p>
+<p>3.举例：</p>
+<p>​      <FTP></FTP></p>
+<p>hydra -I -f -l wang -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -o E:\桌面\hack\workspace\ftp-pwd-result.txt <a href="ftp://192.168.27.46/">ftp://192.168.27.46</a></p>
+<p>​       <ssh></ssh></p>
+<p>hydra -I -t 1 -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -M E:\桌面\hack\workspace\22-output.txt -o E:\桌面\hack\workspace\ssh-pwd-result.txt ssh</p>
+<p>​      <telnet></telnet></p>
+<p>hydra -I -f -vV -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt  -o E:\桌面\hack\workspace\telnet-pwd-result.txt  telnet://192.168.27.32</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<p>1.切换到root用户：  su+密码</p>
+<p>2.关闭系统：  init 0</p>
+<p>3.重启系统：  reboot</p>
+<p>4.显示工作目录： pwd</p>
+<p>5.详细显示文件：ls -l</p>
+<p>6.显示隐藏文件： ls -a</p>
+<p>7.显示系统日期： date</p>
+<p>8.删除文件：rm -f file1</p>
+<p>9.删除目录： rmdir -rf dir1</p>
+<p>10.创建目录： mkdir  dir1</p>
+<p>11.重命名/移动一个目录：mv dir1 new-dir</p>
+<p>12.复制一个文件： cp file1 file2</p>
+<p>13.复制一个目录下的所有文件到当前目录：cp dir/* .</p>
+<p>14.搜索文件：find /  -name file1</p>
+<p>15.创建/删除一个新用户：useradd user1/userdel -r user1</p>
+<p>16.解压/压缩zip文件： unzip filename.zip/zip filename.zip Dirname</p>
+<p>17.解压/压缩gz文件： gunzip filename.gz/gzip filename</p>
+<p>18.解压/压缩tar文件： tar xvf filename.tar/tar cvf filename.tar Dirname</p>
+<p>19.解压/压缩rar文件： rar a filename.rar/rar e filename.rar</p>
+<p>20.解压/压缩.tar.gz文件： tar zxvf filename.tar.gz/tar zcvf filename.tar.gz</p>
+<p>21.提权：chmod u+w /etc/sudoer[u代表user,g代表group，o代表other，a代表所有][r,w,x分别代表读，写，执行][u对应的r,w,x为1，2，3；g对应的r,w,x,为4，5，6；o对应的r,w,x,为7，8，9][a+x可以写为+x]</p>
+<p>22.比较两个文件的差异并输出：diff  -u  原文件1  源文件2  &gt; 目标文件 【将原文件1和原文件2对比的结果输入到目标文件】【“-”表示在原文件中，“+”表示在目标文件中；以空格开始的行表示在两个文件中都出现相同的内容】</p>
+<p>23.查看文件: more 文件名</p>
+<p>24.dpkg  -i  xxx.deb 【安装软件，其中xxx.deb为压缩包】</p>
+<p>25.top  【类似于Win10的任务管理器】</p>
+<p>26.df   【查看磁盘的使用率，其中的/dev/sdal显示的是内存的使用量】</p>
+<p>27.apt-get clean 【清理系统垃圾】</p>
+<p>28.touch  filename 【创建文件】</p>
 ]]></content>
   </entry>
   <entry>
@@ -148,12 +158,13 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2021/03/14/Redis/</url>
-    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
-<p>2.启动客户端Redis</p>
-<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
-<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
-<p>​            </p>
+    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
+<p>2.sh文件权限不够：chmod +x  **.sh</p>
+<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
+<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
+<p>5.tomcat的用户名和密码都是tomcat</p>
+<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
 ]]></content>
   </entry>
   <entry>
