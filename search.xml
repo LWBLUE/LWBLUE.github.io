@@ -56,16 +56,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2021/03/14/Redis/</url>
-    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
-<p>2.启动客户端Redis</p>
-<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
-<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
-<p>​            </p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2021/03/14/Sqlmap/</url>
     <content><![CDATA[<p>1.参数：</p>
 <p>​      -u 【指定url】</p>
@@ -84,6 +74,16 @@
   </entry>
   <entry>
     <title></title>
+    <url>/2021/03/14/Redis/</url>
+    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
+<p>2.启动客户端Redis</p>
+<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
+<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
+<p>​            </p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2021/03/14/hydra/</url>
     <content><![CDATA[<p>1.Hydra,俗称九头蛇，用来进行暴力破解。</p>
 <p>2.使用介绍:  hydra  -L(与小写的l的区别是使用的是用户名本)  -l(使用单个的用户名)  -P(使用密码本)  -p(使用的单个密码)   -e nsr(n表示空密码登录，s表示使用pass和/登录，r表示反向登录)  -o(指定结果输出文件)   -f(找到正确的密码和用户名后终止破解)   -t(指定进程数)   -w(指定响应的最大等待时间)  -M(服务器列表IP列表)  -vV(v表示详细模式；-V表示每次登录成功的用户名和密码)    -I(大写的i表示忽略现有的恢复文件)</p>
@@ -94,6 +94,33 @@
 <p>hydra -I -t 1 -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -M E:\桌面\hack\workspace\22-output.txt -o E:\桌面\hack\workspace\ssh-pwd-result.txt ssh</p>
 <p>​      <telnet></telnet></p>
 <p>hydra -I -f -vV -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt  -o E:\桌面\hack\workspace\telnet-pwd-result.txt  telnet://192.168.27.32</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/msf/</url>
+    <content><![CDATA[<p>1.msf与shodan的结合【仅仅search shodan就可以】</p>
+<p>2.msf搜索enable_rdp【RDP远程桌面协议，用来连接远程桌面；Win7的icbug用户名为icbug,ps为******】</p>
+<p>3.利用msf获取另一台主机的权限后的一些命令;</p>
+<p>​         getuid：查看用户权限</p>
+<p>​         screenshot: 截图</p>
+<p>​          webcam_stream:打开相机</p>
+<p>​          upload  a.exe  C::上传病毒</p>
+<p>​           execute -f   C:\a.exe:执行病毒文件</p>
+<p>​          chcp 65001:获取主机权限后显示乱码</p>
+<p>​          sessios:显示所有建立的session</p>
+<p>​           session   -i  x :进入某个session会话</p>
+<p>​          record_mic:打开对方的麦克风</p>
+<p>​          web_chat:启动与目标计算机的视频聊天</p>
+<p>​           webcam_snap:用于从目标设备获取照片</p>
+<p>​            getsystem:获取系统管理员权限</p>
+<p>​             background:进程隐藏到后台</p>
+<p>4.选择脚本时应该优先选择excellent和great。</p>
+<p>5.msf加载Nexpose插件的相关命令：</p>
+<p>​               load nexpose:加载插件</p>
+<p>​                nexpose_scan IP:扫描IP</p>
+<p>​                db_hosts  -c  address :显示扫描漏洞的粗略信息</p>
+<p>​                 db_vulns:显示漏洞的详细信息</p>
 ]]></content>
   </entry>
   <entry>
@@ -131,44 +158,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2021/03/14/msf/</url>
-    <content><![CDATA[<p>1.msf与shodan的结合【仅仅search shodan就可以】</p>
-<p>2.msf搜索enable_rdp【RDP远程桌面协议，用来连接远程桌面；Win7的icbug用户名为icbug,ps为******】</p>
-<p>3.利用msf获取另一台主机的权限后的一些命令;</p>
-<p>​         getuid：查看用户权限</p>
-<p>​         screenshot: 截图</p>
-<p>​          webcam_stream:打开相机</p>
-<p>​          upload  a.exe  C::上传病毒</p>
-<p>​           execute -f   C:\a.exe:执行病毒文件</p>
-<p>​          chcp 65001:获取主机权限后显示乱码</p>
-<p>​          sessios:显示所有建立的session</p>
-<p>​           session   -i  x :进入某个session会话</p>
-<p>​          record_mic:打开对方的麦克风</p>
-<p>​          web_chat:启动与目标计算机的视频聊天</p>
-<p>​           webcam_snap:用于从目标设备获取照片</p>
-<p>​            getsystem:获取系统管理员权限</p>
-<p>​             background:进程隐藏到后台</p>
-<p>4.选择脚本时应该优先选择excellent和great。</p>
-<p>5.msf加载Nexpose插件的相关命令：</p>
-<p>​               load nexpose:加载插件</p>
-<p>​                nexpose_scan IP:扫描IP</p>
-<p>​                db_hosts  -c  address :显示扫描漏洞的粗略信息</p>
-<p>​                 db_vulns:显示漏洞的详细信息</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
-    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
-<p>2.sh文件权限不够：chmod +x  **.sh</p>
-<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
-<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
-<p>5.tomcat的用户名和密码都是tomcat</p>
-<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2021/03/14/%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>1.常见的协议和端口号</p>
 <p>​            DHCP协议【动态主机设置协议，用于自动分配IP地址】：67【服务器的端口号，基于UDP】；68【客户机的端口号】</p>
@@ -190,6 +179,17 @@
 <p>​                  &lt;2&gt;FTP       FTP或者为空</p>
 <p>​                   &lt;3&gt;USER     pass</p>
 <p>​              </p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
+<p>2.sh文件权限不够：chmod +x  **.sh</p>
+<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
+<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
+<p>5.tomcat的用户名和密码都是tomcat</p>
+<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
 ]]></content>
   </entry>
 </search>
