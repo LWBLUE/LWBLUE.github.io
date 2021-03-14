@@ -21,6 +21,7 @@
 <p>4.hexo d:发布到服务器</p>
 <p>5.hexo  g  -d :组合命令，生成文件并发表</p>
 <p>6.hexo n   “articalname” :创建新的文章</p>
+<p>7.<a href="xxxx/%E5%9B%BE%E7%89%87%E5%90%8D.jpg">你想输入的替代文字</a>：插入图片</p>
 ]]></content>
   </entry>
   <entry>
@@ -197,6 +198,7 @@
     <url>/2021/03/14/Mysql/</url>
     <content><![CDATA[<p>1.的方式顺丰到付的</p>
 <p>  的非法手！<a href="weixin.jpg">alt</a></p>
+<p>2.<img src="/.io//Node\myblog\myblog\source\_posts\Mysql\weixin.jpg" alt="weixin" style="zoom:25%;"></p>
 ]]></content>
       <tags>
         <tag>Mysql</tag>
