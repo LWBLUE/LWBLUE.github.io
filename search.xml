@@ -1,169 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Mysql</title>
-      <link href="2021/03/14/Mysql/"/>
-      <url>2021/03/14/Mysql/</url>
-      
-        <content type="html"><![CDATA[<p>1.的方式顺丰到付的</p><p>  的非法手！<a href="Mysql/weixin.jpg">alt</a></p><p>2.<img src="/.io//Node\myblog\myblog\source\_posts\Mysql\weixin.jpg" alt="weixin" style="zoom:25%;"></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Mysql </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/Hexo/"/>
-      <url>2021/03/14/Hexo/</url>
-      
-        <content type="html"><![CDATA[<p>1.hexo clean :清除缓存文件</p><p>2.hexo g:生成博客文件</p><p>3.hexo s:启动本地服务器通过，localhost:4000访问</p><p>4.hexo d:发布到服务器</p><p>5.hexo  g  -d :组合命令，生成文件并发表</p><p>6.hexo n   “articalname” :创建新的文章</p><p>7.<a href="xxxx/%E5%9B%BE%E7%89%87%E5%90%8D.jpg">你想输入的替代文字</a>：插入图片</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/"/>
-      <url>2021/03/14/%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</url>
-      
-        <content type="html"><![CDATA[<p>1.常见的协议和端口号</p><p>​            DHCP协议【动态主机设置协议，用于自动分配IP地址】：67【服务器的端口号，基于UDP】；68【客户机的端口号】</p><p>​              HTTPS：443【基于TCP；基于UDP】【https=http+ssl,更安全】</p><p>​              tomcat: 8080</p><p>​              mongdb:27017</p><p>​              mysql:3306</p><p>​              Oracle:1521</p><p>​              SMB：445</p><p>​               SSH:22</p><p>​               FTP【文件传输协议】:21</p><p>​               Telnet【远程登陆协议】：23</p><p>​                SMTP【简单邮件传输协议】：25</p><p>​                 DNS【域名解析服务】：53</p><p>2.Windows中ping命令发送4个ICMP回送请求，每一个32字节的数据；Linux中发送次数不限，每一个64字节的数据。</p><p>3.端口是各种程序为了接收和发送数据而打开的窗户；分为UDP和TCP端口，每一种端口范围均为1~65535</p><p>4.FTP匿名登录的弱口令：</p><p>​                 &lt;1&gt;用户名：annoymous   密码： Email或者为空  </p><p>​                  &lt;2&gt;FTP       FTP或者为空</p><p>​                   &lt;3&gt;USER     pass</p><p>​              </p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/Redis/"/>
-      <url>2021/03/14/Redis/</url>
-      
-        <content type="html"><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p><p>2.启动客户端Redis</p><p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p><p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p><p>​            </p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/msf/"/>
-      <url>2021/03/14/msf/</url>
-      
-        <content type="html"><![CDATA[<p>1.msf与shodan的结合【仅仅search shodan就可以】</p><p>2.msf搜索enable_rdp【RDP远程桌面协议，用来连接远程桌面；Win7的icbug用户名为icbug,ps为******】</p><p>3.利用msf获取另一台主机的权限后的一些命令;</p><p>​         getuid：查看用户权限</p><p>​         screenshot: 截图</p><p>​          webcam_stream:打开相机</p><p>​          upload  a.exe  C::上传病毒</p><p>​           execute -f   C:\a.exe:执行病毒文件</p><p>​          chcp 65001:获取主机权限后显示乱码</p><p>​          sessios:显示所有建立的session</p><p>​           session   -i  x :进入某个session会话</p><p>​          record_mic:打开对方的麦克风</p><p>​          web_chat:启动与目标计算机的视频聊天</p><p>​           webcam_snap:用于从目标设备获取照片</p><p>​            getsystem:获取系统管理员权限</p><p>​             background:进程隐藏到后台</p><p>4.选择脚本时应该优先选择excellent和great。</p><p>5.msf加载Nexpose插件的相关命令：</p><p>​               load nexpose:加载插件</p><p>​                nexpose_scan IP:扫描IP</p><p>​                db_hosts  -c  address :显示扫描漏洞的粗略信息</p><p>​                 db_vulns:显示漏洞的详细信息</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/Sqlmap/"/>
-      <url>2021/03/14/Sqlmap/</url>
-      
-        <content type="html"><![CDATA[<p>1.参数：</p><p>​      -u 【指定url】</p><p>​     -dbms  【指定数据库的类型如MySQL，oracle】</p><p>​     -level  【级别越高，检测越全面，共5级】</p><p>​     -cookie  【使用cookie注入】</p><p>​      -dbs  【注入成功后查询有哪些数据库】</p><p>​       -D  test    -tables  【查询test数据库里面有哪些表】</p><p>​       -D test  -T  admin  -columns【查询test数据库种，admin表中有哪些字段】</p><p>​        -D test  -T  admin  -C  “username,password” -dump 【dump出字段username和password中的数据】</p><p>​         –batch  【不用每一次输入YES/NO】</p><p>​         –random-agent  【构造随机的user-agent】</p><p>​         –threads  【请求并发量】</p><p>​          -r  “C:\tools….txt”  【POST注入，xxx.txt为抓包的内容】</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/Nmap/"/>
-      <url>2021/03/14/Nmap/</url>
-      
-        <content type="html"><![CDATA[<p>1.Nmap默认发送一个ARP的ping数据包来探测目标主机1~1000范围内开放的端口。</p><p>2.参数：  -vv【详细输出结果】</p><p>​                -p 【指定扫描端口a-b或者a,b,c】</p><p>​                -sP   【ping扫描，不发现端口和版本，仅仅检查是否存活主机】</p><p>​                -O   【输出操作系统信息】</p><p>​                -A  【万能命令】</p><p>​               -ip 【设置扫描IP】</p><p>​               -url 【设置网址】</p><p>​                -sS  【TCP,SYN扫描，匿名扫描，速度快；半开放扫描，只发送SYN，如果服务器恢复SYN,ACK，证明端口开放，不建立完整连接】</p><p>​                -sT 【TCP全连接扫描，耗时长，完成3次握手】</p><p>​               -sV 【探测开放端口的服务和版本信息】</p><p>​               -sA 【使用TCP的ACK进行扫描，穿越防火墙的规则集】</p><p>​                -sF 【使用FIN扫描，目标主机可能会有IDS和IPS系统的存在，防火墙可能过滤掉了SYN数据包，发送一个SYN标志的数据包不需要完成TCP握手】</p><p>​               -T 【取值0~5，级别越高扫描速度越快，也越容易被防火墙屏蔽掉】</p><p>​                -F 【快速扫描100个端口】</p><p>​                 -e 【使用指定的网卡发送数据包】</p><p>3.原理：默认情况下Nmap会发送4种不同类型的数据包来探测目标主机是否在线。只要收到其中一个包的回复就证明目标主机开启。</p><p>​               &lt;1&gt;  ICMP echo request</p><p>​               &lt;2&gt; a TCP SYN packet to port 443</p><p>​                &lt;3&gt;a TCP SYN packet to port 80</p><p>​                &lt;4&gt;an ICMP timestamp request</p><p>4.扫描结果分析：</p><p>​            open</p><p>​            closed</p><p>​             filtered</p><p>​             unfiltered 【数据可以到达，但是无法判断端口是开启或者关闭】</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/GitHack/"/>
-      <url>2021/03/14/GitHack/</url>
-      
-        <content type="html"><![CDATA[<p>1.进入GitHack目录</p><p>2.输入 python  GitHack.py   网址/.git[使用GitHack脚本查看是否有git泄露]</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/crunch/"/>
-      <url>2021/03/14/crunch/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/hydra/"/>
-      <url>2021/03/14/hydra/</url>
-      
-        <content type="html"><![CDATA[<p>1.Hydra,俗称九头蛇，用来进行暴力破解。</p><p>2.使用介绍:  hydra  -L(与小写的l的区别是使用的是用户名本)  -l(使用单个的用户名)  -P(使用密码本)  -p(使用的单个密码)   -e nsr(n表示空密码登录，s表示使用pass和/登录，r表示反向登录)  -o(指定结果输出文件)   -f(找到正确的密码和用户名后终止破解)   -t(指定进程数)   -w(指定响应的最大等待时间)  -M(服务器列表IP列表)  -vV(v表示详细模式；-V表示每次登录成功的用户名和密码)    -I(大写的i表示忽略现有的恢复文件)</p><p>3.举例：</p><p>​      <FTP></FTP></p><p>hydra -I -f -l wang -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -o E:\桌面\hack\workspace\ftp-pwd-result.txt <a href="ftp://192.168.27.46/">ftp://192.168.27.46</a></p><p>​       <ssh></ssh></p><p>hydra -I -t 1 -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -M E:\桌面\hack\workspace\22-output.txt -o E:\桌面\hack\workspace\ssh-pwd-result.txt ssh</p><p>​      <telnet></telnet></p><p>hydra -I -f -vV -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt  -o E:\桌面\hack\workspace\telnet-pwd-result.txt  telnet://192.168.27.32</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/"/>
-      <url>2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
-      
-        <content type="html"><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p><p>2.sh文件权限不够：chmod +x  **.sh</p><p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p><p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p><p>5.tomcat的用户名和密码都是tomcat</p><p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-      <url>2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-      
-        <content type="html"><![CDATA[<p>1.切换到root用户：  su+密码</p><p>2.关闭系统：  init 0</p><p>3.重启系统：  reboot</p><p>4.显示工作目录： pwd</p><p>5.详细显示文件：ls -l</p><p>6.显示隐藏文件： ls -a</p><p>7.显示系统日期： date</p><p>8.删除文件：rm -f file1</p><p>9.删除目录： rmdir -rf dir1</p><p>10.创建目录： mkdir  dir1</p><p>11.重命名/移动一个目录：mv dir1 new-dir</p><p>12.复制一个文件： cp file1 file2</p><p>13.复制一个目录下的所有文件到当前目录：cp dir/* .</p><p>14.搜索文件：find /  -name file1</p><p>15.创建/删除一个新用户：useradd user1/userdel -r user1</p><p>16.解压/压缩zip文件： unzip filename.zip/zip filename.zip Dirname</p><p>17.解压/压缩gz文件： gunzip filename.gz/gzip filename</p><p>18.解压/压缩tar文件： tar xvf filename.tar/tar cvf filename.tar Dirname</p><p>19.解压/压缩rar文件： rar a filename.rar/rar e filename.rar</p><p>20.解压/压缩.tar.gz文件： tar zxvf filename.tar.gz/tar zcvf filename.tar.gz</p><p>21.提权：chmod u+w /etc/sudoer[u代表user,g代表group，o代表other，a代表所有][r,w,x分别代表读，写，执行][u对应的r,w,x为1，2，3；g对应的r,w,x,为4，5，6；o对应的r,w,x,为7，8，9][a+x可以写为+x]</p><p>22.比较两个文件的差异并输出：diff  -u  原文件1  源文件2  &gt; 目标文件 【将原文件1和原文件2对比的结果输入到目标文件】【“-”表示在原文件中，“+”表示在目标文件中；以空格开始的行表示在两个文件中都出现相同的内容】</p><p>23.查看文件: more 文件名</p><p>24.dpkg  -i  xxx.deb 【安装软件，其中xxx.deb为压缩包】</p><p>25.top  【类似于Win10的任务管理器】</p><p>26.df   【查看磁盘的使用率，其中的/dev/sdal显示的是内存的使用量】</p><p>27.apt-get clean 【清理系统垃圾】</p><p>28.touch  filename 【创建文件】</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/crunch/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/GitHack/</url>
+    <content><![CDATA[<p>1.进入GitHack目录</p>
+<p>2.输入 python  GitHack.py   网址/.git[使用GitHack脚本查看是否有git泄露]</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/Hexo/</url>
+    <content><![CDATA[<p>1.hexo clean :清除缓存文件</p>
+<p>2.hexo g:生成博客文件</p>
+<p>3.hexo s:启动本地服务器通过，localhost:4000访问</p>
+<p>4.hexo d:发布到服务器</p>
+<p>5.hexo  g  -d :组合命令，生成文件并发表</p>
+<p>6.hexo n   “articalname” :创建新的文章</p>
+<p>7.<a href="xxxx/%E5%9B%BE%E7%89%87%E5%90%8D.jpg">你想输入的替代文字</a>：插入图片</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Mysql</title>
+    <url>/2021/03/14/Mysql/</url>
+    <content><![CDATA[<p>1.的方式顺丰到付的<img src="/.io//Node\myblog\myblog\source_posts\Mysql\weixin.jpg"></p>
+]]></content>
+      <tags>
+        <tag>Mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/Redis/</url>
+    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
+<p>2.启动客户端Redis</p>
+<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
+<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
+<p>​            </p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/Nmap/</url>
+    <content><![CDATA[<p>1.Nmap默认发送一个ARP的ping数据包来探测目标主机1~1000范围内开放的端口。</p>
+<p>2.参数：  -vv【详细输出结果】</p>
+<p>​                -p 【指定扫描端口a-b或者a,b,c】</p>
+<p>​                -sP   【ping扫描，不发现端口和版本，仅仅检查是否存活主机】</p>
+<p>​                -O   【输出操作系统信息】</p>
+<p>​                -A  【万能命令】</p>
+<p>​               -ip 【设置扫描IP】</p>
+<p>​               -url 【设置网址】</p>
+<p>​                -sS  【TCP,SYN扫描，匿名扫描，速度快；半开放扫描，只发送SYN，如果服务器恢复SYN,ACK，证明端口开放，不建立完整连接】</p>
+<p>​                -sT 【TCP全连接扫描，耗时长，完成3次握手】</p>
+<p>​               -sV 【探测开放端口的服务和版本信息】</p>
+<p>​               -sA 【使用TCP的ACK进行扫描，穿越防火墙的规则集】</p>
+<p>​                -sF 【使用FIN扫描，目标主机可能会有IDS和IPS系统的存在，防火墙可能过滤掉了SYN数据包，发送一个SYN标志的数据包不需要完成TCP握手】</p>
+<p>​               -T 【取值0~5，级别越高扫描速度越快，也越容易被防火墙屏蔽掉】</p>
+<p>​                -F 【快速扫描100个端口】</p>
+<p>​                 -e 【使用指定的网卡发送数据包】</p>
+<p>3.原理：默认情况下Nmap会发送4种不同类型的数据包来探测目标主机是否在线。只要收到其中一个包的回复就证明目标主机开启。</p>
+<p>​               &lt;1&gt;  ICMP echo request</p>
+<p>​               &lt;2&gt; a TCP SYN packet to port 443</p>
+<p>​                &lt;3&gt;a TCP SYN packet to port 80</p>
+<p>​                &lt;4&gt;an ICMP timestamp request</p>
+<p>4.扫描结果分析：</p>
+<p>​            open</p>
+<p>​            closed</p>
+<p>​             filtered</p>
+<p>​             unfiltered 【数据可以到达，但是无法判断端口是开启或者关闭】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/Sqlmap/</url>
+    <content><![CDATA[<p>1.参数：</p>
+<p>​      -u 【指定url】</p>
+<p>​     -dbms  【指定数据库的类型如MySQL，oracle】</p>
+<p>​     -level  【级别越高，检测越全面，共5级】</p>
+<p>​     -cookie  【使用cookie注入】</p>
+<p>​      -dbs  【注入成功后查询有哪些数据库】</p>
+<p>​       -D  test    -tables  【查询test数据库里面有哪些表】</p>
+<p>​       -D test  -T  admin  -columns【查询test数据库种，admin表中有哪些字段】</p>
+<p>​        -D test  -T  admin  -C  “username,password” -dump 【dump出字段username和password中的数据】</p>
+<p>​         –batch  【不用每一次输入YES/NO】</p>
+<p>​         –random-agent  【构造随机的user-agent】</p>
+<p>​         –threads  【请求并发量】</p>
+<p>​          -r  “C:\tools….txt”  【POST注入，xxx.txt为抓包的内容】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/kali%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<p>1.切换到root用户：  su+密码</p>
+<p>2.关闭系统：  init 0</p>
+<p>3.重启系统：  reboot</p>
+<p>4.显示工作目录： pwd</p>
+<p>5.详细显示文件：ls -l</p>
+<p>6.显示隐藏文件： ls -a</p>
+<p>7.显示系统日期： date</p>
+<p>8.删除文件：rm -f file1</p>
+<p>9.删除目录： rmdir -rf dir1</p>
+<p>10.创建目录： mkdir  dir1</p>
+<p>11.重命名/移动一个目录：mv dir1 new-dir</p>
+<p>12.复制一个文件： cp file1 file2</p>
+<p>13.复制一个目录下的所有文件到当前目录：cp dir/* .</p>
+<p>14.搜索文件：find /  -name file1</p>
+<p>15.创建/删除一个新用户：useradd user1/userdel -r user1</p>
+<p>16.解压/压缩zip文件： unzip filename.zip/zip filename.zip Dirname</p>
+<p>17.解压/压缩gz文件： gunzip filename.gz/gzip filename</p>
+<p>18.解压/压缩tar文件： tar xvf filename.tar/tar cvf filename.tar Dirname</p>
+<p>19.解压/压缩rar文件： rar a filename.rar/rar e filename.rar</p>
+<p>20.解压/压缩.tar.gz文件： tar zxvf filename.tar.gz/tar zcvf filename.tar.gz</p>
+<p>21.提权：chmod u+w /etc/sudoer[u代表user,g代表group，o代表other，a代表所有][r,w,x分别代表读，写，执行][u对应的r,w,x为1，2，3；g对应的r,w,x,为4，5，6；o对应的r,w,x,为7，8，9][a+x可以写为+x]</p>
+<p>22.比较两个文件的差异并输出：diff  -u  原文件1  源文件2  &gt; 目标文件 【将原文件1和原文件2对比的结果输入到目标文件】【“-”表示在原文件中，“+”表示在目标文件中；以空格开始的行表示在两个文件中都出现相同的内容】</p>
+<p>23.查看文件: more 文件名</p>
+<p>24.dpkg  -i  xxx.deb 【安装软件，其中xxx.deb为压缩包】</p>
+<p>25.top  【类似于Win10的任务管理器】</p>
+<p>26.df   【查看磁盘的使用率，其中的/dev/sdal显示的是内存的使用量】</p>
+<p>27.apt-get clean 【清理系统垃圾】</p>
+<p>28.touch  filename 【创建文件】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/hydra/</url>
+    <content><![CDATA[<p>1.Hydra,俗称九头蛇，用来进行暴力破解。</p>
+<p>2.使用介绍:  hydra  -L(与小写的l的区别是使用的是用户名本)  -l(使用单个的用户名)  -P(使用密码本)  -p(使用的单个密码)   -e nsr(n表示空密码登录，s表示使用pass和/登录，r表示反向登录)  -o(指定结果输出文件)   -f(找到正确的密码和用户名后终止破解)   -t(指定进程数)   -w(指定响应的最大等待时间)  -M(服务器列表IP列表)  -vV(v表示详细模式；-V表示每次登录成功的用户名和密码)    -I(大写的i表示忽略现有的恢复文件)</p>
+<p>3.举例：</p>
+<p>​      <FTP></FTP></p>
+<p>hydra -I -f -l wang -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -o E:\桌面\hack\workspace\ftp-pwd-result.txt <a href="ftp://192.168.27.46/">ftp://192.168.27.46</a></p>
+<p>​       <ssh></ssh></p>
+<p>hydra -I -t 1 -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt -M E:\桌面\hack\workspace\22-output.txt -o E:\桌面\hack\workspace\ssh-pwd-result.txt ssh</p>
+<p>​      <telnet></telnet></p>
+<p>hydra -I -f -vV -l root -P E:\桌面\hack\tools\Fuzz字典\密码字典\test.txt  -o E:\桌面\hack\workspace\telnet-pwd-result.txt  telnet://192.168.27.32</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/msf/</url>
+    <content><![CDATA[<p>1.msf与shodan的结合【仅仅search shodan就可以】</p>
+<p>2.msf搜索enable_rdp【RDP远程桌面协议，用来连接远程桌面；Win7的icbug用户名为icbug,ps为******】</p>
+<p>3.利用msf获取另一台主机的权限后的一些命令;</p>
+<p>​         getuid：查看用户权限</p>
+<p>​         screenshot: 截图</p>
+<p>​          webcam_stream:打开相机</p>
+<p>​          upload  a.exe  C::上传病毒</p>
+<p>​           execute -f   C:\a.exe:执行病毒文件</p>
+<p>​          chcp 65001:获取主机权限后显示乱码</p>
+<p>​          sessios:显示所有建立的session</p>
+<p>​           session   -i  x :进入某个session会话</p>
+<p>​          record_mic:打开对方的麦克风</p>
+<p>​          web_chat:启动与目标计算机的视频聊天</p>
+<p>​           webcam_snap:用于从目标设备获取照片</p>
+<p>​            getsystem:获取系统管理员权限</p>
+<p>​             background:进程隐藏到后台</p>
+<p>4.选择脚本时应该优先选择excellent和great。</p>
+<p>5.msf加载Nexpose插件的相关命令：</p>
+<p>​               load nexpose:加载插件</p>
+<p>​                nexpose_scan IP:扫描IP</p>
+<p>​                db_hosts  -c  address :显示扫描漏洞的粗略信息</p>
+<p>​                 db_vulns:显示漏洞的详细信息</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
+<p>2.sh文件权限不够：chmod +x  **.sh</p>
+<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
+<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
+<p>5.tomcat的用户名和密码都是tomcat</p>
+<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>1.常见的协议和端口号</p>
+<p>​            DHCP协议【动态主机设置协议，用于自动分配IP地址】：67【服务器的端口号，基于UDP】；68【客户机的端口号】</p>
+<p>​              HTTPS：443【基于TCP；基于UDP】【https=http+ssl,更安全】</p>
+<p>​              tomcat: 8080</p>
+<p>​              mongdb:27017</p>
+<p>​              mysql:3306</p>
+<p>​              Oracle:1521</p>
+<p>​              SMB：445</p>
+<p>​               SSH:22</p>
+<p>​               FTP【文件传输协议】:21</p>
+<p>​               Telnet【远程登陆协议】：23</p>
+<p>​                SMTP【简单邮件传输协议】：25</p>
+<p>​                 DNS【域名解析服务】：53</p>
+<p>2.Windows中ping命令发送4个ICMP回送请求，每一个32字节的数据；Linux中发送次数不限，每一个64字节的数据。</p>
+<p>3.端口是各种程序为了接收和发送数据而打开的窗户；分为UDP和TCP端口，每一种端口范围均为1~65535</p>
+<p>4.FTP匿名登录的弱口令：</p>
+<p>​                 &lt;1&gt;用户名：annoymous   密码： Email或者为空  </p>
+<p>​                  &lt;2&gt;FTP       FTP或者为空</p>
+<p>​                   &lt;3&gt;USER     pass</p>
+<p>​              </p>
+]]></content>
+  </entry>
 </search>
