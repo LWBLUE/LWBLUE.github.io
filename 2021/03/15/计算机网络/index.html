@@ -9,7 +9,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,React,Vue.js等">
+    <meta name="keywords" content="计算机网络, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
     <meta name="description" content="专注于Web,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -21,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>MYBLOG</title>
+    <title>计算机网络 | MYBLOG</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -356,12 +356,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">计算机网络</h1>
                 </div>
             </div>
         </div>
@@ -475,9 +475,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                <span class="chip bg-color">计算机网络</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -505,18 +509,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1.Markdown代码编写语法：</p>
-<p>​             &lt;1&gt;行内代码使用’ ‘来标记：例如函数’scanf()’里面的函数名字就是这样标记的。</p>
-<p>​            &lt;2&gt;多行代码：在需要高亮的代码的前一行及后一行使用反引号```(~键)，同时在第一行反引号后面，输入代码块使用的语言，实现代码高亮。</p>
-<p>​            &lt;3&gt;缩进式插入多行代码：缩进插入前方必须有空行；缩进4个空格或者一个制表符。</p>
-<p>2.快捷键：</p>
-<p>​               加粗： Ctrl+B</p>
-<p>​                插入链接： Ctrl+L</p>
-<p>​                插入代码：Ctrl+K</p>
-<p>​                插入图片：Ctrl+G</p>
-<p>​                横线：Ctrl+R</p>
-<p>​                 撤销：Ctrl+Z</p>
-<p>3.标题：分为六级，一级对应一个#，二级对应2个#。。。。</p>
+                <p>1.IP数据报的格式：版本包括IPV4和IPV6；总长度包括首部长度和数据部分长度。</p>
+<p> 首部长度占4位，最大值位15，值为1表示的是一个32位字的长度，也就是4个字节，因为首部长度为20个字节，因此该值最小为5，如果可选字段的长度不是4字节的整数倍，就用尾部的填充部分来填充。</p>
+<p>2.IP数据报=首部+数据部分</p>
+<p>3.生存时间：TTL,目的是防止无法交付的数据报在互联网中不断的兜圈子。以路由器跳数为单位，每经过一个路由器，在转发之前就把跳数减为1，当TTL减为0时就会丢弃这个数据报，因为数据报在因特网中最大经过的路由器是255。</p>
+<p>4.协议：指出携带的数据应该上交给那个协议进行处理。</p>
+<p>5.首部校验和：因为数据报每经过一个路由器，都要重新计算校验和，因此校验和不包括数据部分可以减少计算的工作量。</p>
+<p>6.标识：在数据报长度过长而发生分片的情况下，相同的数据报的不同分片具有相同的标识。</p>
+<p>7.标志：占3位，目前仅仅2位有意义，最低位记为MF，MF=1表示后面还有分片的数据报，MF=0表示这是若干数据报中的最后一个；中间的一位位DF，意味着不能分片，只有当DF=0时才允许分片。</p>
+<p>如图IP数据报格式：！<a href="IP%E6%8A%A5.png">IP数据报格式图</a></p>
 
                 
             </div>
@@ -543,7 +544,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://LWBLUE.github.io/2021/03/15/markdown/">http://LWBLUE.github.io/2021/03/15/markdown/</a>
+                    <a href="http://LWBLUE.github.io/2021/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">http://LWBLUE.github.io/2021/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -580,7 +581,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
+                                    <span class="chip bg-color">计算机网络</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -803,9 +808,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">
                     <div class="card-image">
@@ -823,9 +829,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -834,6 +840,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -852,7 +859,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/15/Antsword/">
+                <a href="/2021/03/15/markdown/">
                     <div class="card-image">
                         
                         
