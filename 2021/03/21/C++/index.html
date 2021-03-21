@@ -505,7 +505,85 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>C++ STL：</p>
+<p>1.Stack(容器适配器):</p>
+<p>​           &lt;1&gt;可用的顺序容器：vector,list,deque（默认）</p>
+<p>​            &lt;2&gt;覆盖默认容器类型： stack&lt;int,vector<int>&gt;stk;</int></p>
+<p>​            &lt;3&gt;stack<int> s;</int></p>
+<p>​                   s.pop(); //删除栈顶元素，但是不返回其值。</p>
+<p>​                    s.top(); //返回栈顶元素，但是不删除此元素。</p>
+<p>2.Queue(容器适配器)：</p>
+<p>​                        &lt;1&gt;可用的顺序容器：list,deque（默认）。</p>
+<p>​                         &lt;2&gt;queue<int> q;</int></p>
+<p>​                                q.front();  //返回队首元素的值，但不删除该元素</p>
+<p>​                                 q.back();   //返回队尾元素的值，但不删除该元素。</p>
+<p>​                          &lt;3&gt;priority_queue:</p>
+<p>​                                              priority_queue<int> p;</int></p>
+<p>​                                              p.top(); // 返回具有最高优先级的元素值，但是不删除该元素。</p>
+<p>​                                               p.push 插入元素到队尾 (并排序);</p>
+<p>​                                               优先队列具有队列的所有特性，包括基本操作，只是在这基础上添加了内部的一个排序，它本质是一个堆实现的.</p>
+<p>3.Vector(容器)：</p>
+<p>​                         &lt;1&gt;push_back 在数组的最后添加一个数据。</p>
+<p>​                          &lt;2&gt;pop_back 去掉数组的最后一个数据.</p>
+<p>​                           &lt;3&gt;begin 得到数组头的指针.</p>
+<p>​                           &lt;4&gt;end 得到数组的最后一个单元+1的指针.</p>
+<p>​                            &lt;5&gt;resize 改变当前使用数据的大小，如果它比当前使用的大，者填充默认值</p>
+<p>​                             &lt;6&gt;erase 删除指针指向的数据项.</p>
+<p>​                              &lt;7&gt;clear 清空当前的vector</p>
+<p>​                              &lt;8&gt;swap 与另一个vector交换数据</p>
+<p>​                               &lt;9&gt;empty 判断vector是否为空</p>
+<p>​                               &lt;10&gt;vector<int>::iterator it; //迭代器的生成。</int></p>
+<p>​                                        for(it=obj.begin();it!=obj.end();it++){</p>
+<p>​                                                           cout&lt;&lt;*it&lt;&lt;” “;</p>
+<p>​                                                   }</p>
+<p>​                                </p>
+<p>4.deque(容器)：双向队列。</p>
+<p>deq[ ]：用来访问双向队列中单个的元素。</p>
+<p>deq.front()：返回第一个元素的引用。<br>deq.back()：返回最后一个元素的引用。<br>deq.push_front(x)：把元素x插入到双向队列的头部。<br>deq.pop_front()：弹出双向队列的第一个元素。<br>deq.push_back(x)：把元素x插入到双向队列的尾部。<br>deq.pop_back()：弹出双向队列的最后一个元素。</p>
+<p>5.list(容器)：双向链表</p>
+<p> &lt;1&gt; Lst1.insert() 插入一个元素到list中 </p>
+<p>&lt;2&gt;Lst1.assign() 给list赋值 </p>
+<p>&lt;3&gt;Lst1.back() 返回最后一个元素 </p>
+<p>​        Lst1.begin() 返回指向第一个元素的迭代器<br>​        Lst1.clear() 删除所有元素<br>​        Lst1.empty() 如果list是空的则返回true<br>​        Lst1.end() 返回末尾的迭代器<br>​        Lst1.erase() 删除一个元素<br>​        Lst1.front() 返回第一个元素</p>
+<pre><code>     Lst1.merge() 合并两个list 
+</code></pre>
+<p>​        Lst1.pop_back() 删除最后一个元素<br>​        Lst1.pop_front() 删除第一个元素<br>​        Lst1.push_back() 在list的末尾添加一个元素<br>​        Lst1.push_front() 在list的头部添加一个元素 </p>
+<pre><code>    Lst1.size() 返回list中的元素个数 
+    Lst1.sort() 给list排序 
+    Lst1.splice() 合并两个list 
+    Lst1.swap() 交换两个list 
+    Lst1.unique() 删除list中相邻重复的元素 
+</code></pre>
+<p>5.map/mutilmaps:(键值对)</p>
+<p>​                        &lt;1&gt;unordered_map 容器和 map 容器仅有一点不同，即 map 容器中存储的数据是有序的，而 unordered_map 容器中是无序的。类似于unordered——set容器和set容器的区别。</p>
+<p>​                         &lt;2&gt;map中的元素是自动按Key升序排序，所以不能对map用sort函数；</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="number">3</span>&gt;begin()         返回指向<span class="built_in">map</span>头部的迭代器</span><br><span class="line"></span><br><span class="line">clear(）        删除所有元素</span><br><span class="line"></span><br><span class="line">count()         返回指定元素出现的次数</span><br><span class="line"></span><br><span class="line">empty()         如果<span class="built_in">map</span>为空则返回<span class="literal">true</span></span><br><span class="line"></span><br><span class="line">end()           返回指向<span class="built_in">map</span>末尾的迭代器</span><br><span class="line"></span><br><span class="line">equal_range()   返回特殊条目的迭代器对</span><br><span class="line"></span><br><span class="line">erase()         删除一个元素</span><br><span class="line"></span><br><span class="line">find()          查找一个元素</span><br><span class="line"></span><br><span class="line">get_allocator() 返回<span class="built_in">map</span>的配置器</span><br><span class="line"></span><br><span class="line">insert()        插入元素</span><br><span class="line"></span><br><span class="line">key_comp()      返回比较元素key的函数</span><br><span class="line"></span><br><span class="line">lower_bound()   返回键值&gt;=给定元素的第一个位置</span><br><span class="line"></span><br><span class="line">max_size()      返回可以容纳的最大元素个数</span><br><span class="line"></span><br><span class="line">rbegin()        返回一个指向<span class="built_in">map</span>尾部的逆向迭代器</span><br><span class="line"></span><br><span class="line">rend()          返回一个指向<span class="built_in">map</span>头部的逆向迭代器</span><br><span class="line"></span><br><span class="line">size()          返回<span class="built_in">map</span>中元素的个数</span><br><span class="line"></span><br><span class="line">swap()           交换两个<span class="built_in">map</span></span><br><span class="line"></span><br><span class="line">upper_bound()    返回键值&gt;给定元素的第一个位置</span><br><span class="line"></span><br><span class="line">value_comp()     返回比较元素value的函数</span><br></pre></td></tr></table></figure>
+
+
+<p>6.Set（容器）：</p>
+<p>   1.begin()–返回指向第一个元素的迭代器</p>
+<ol start="2">
+<li>clear()–清除所有元素</li>
+<li>count()–返回某个值元素的个数</li>
+<li>empty()–如果集合为空，返回true</li>
+<li>end()–返回指向最后一个元素的迭代器</li>
+<li>equal_range()–返回集合中与给定值相等的上下限的两个迭代器</li>
+<li>erase()–删除集合中的元素<br>a.erase(val);//删除键值val</li>
+<li>find()–返回一个指向被查找到元素的迭代器</li>
+<li>get_allocator()–返回集合的分配器</li>
+<li>insert()–在集合中插入元素<br>a.insert(pos,val);//在pos位置添加值val，位置不重要，因为插入后，set会自动排序</li>
+<li>lower_bound()–返回指向大于（或等于）某值的第一个元素的迭代器</li>
+<li>key_comp()–返回一个用于元素间值比较的函数</li>
+<li>max_size()–返回集合能容纳的元素的最大限值<br>例如set<int> a; a.max_size返回的就是整型的上界214748364</int></li>
+<li>rbegin()–返回指向集合中最后一个元素的反向迭代器</li>
+<li>rend()–返回指向集合中第一个元素的反向迭代器</li>
+<li>size()–集合中元素的数目</li>
+<li>swap()–交换两个集合变量</li>
+<li>upper_bound()–返回大于某个值元素的迭代器</li>
+<li>value_comp()–返回一个用于比较元素间的值的函数。</li>
+</ol>
+<p>​                                   </p>
+
                 
             </div>
             <hr/>
@@ -1051,7 +1129,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">6.4k</span>&nbsp;字
+                class="white-color">7.7k</span>&nbsp;字
             
             
             
