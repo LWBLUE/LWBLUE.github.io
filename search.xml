@@ -114,6 +114,13 @@
   </entry>
   <entry>
     <title></title>
+    <url>/2021/03/14/GitHack/</url>
+    <content><![CDATA[<p>1.进入GitHack目录</p>
+<p>2.输入 python  GitHack.py   网址/.git[使用GitHack脚本查看是否有git泄露]</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2021/03/14/Hexo/</url>
     <content><![CDATA[<p>1.hexo clean :清除缓存文件</p>
 <p>2.hexo g:生成博客文件</p>
@@ -122,13 +129,6 @@
 <p>5.hexo  g  -d :组合命令，生成文件并发表</p>
 <p>6.hexo n   “articalname” :创建新的文章</p>
 <p>7.<a href="xxxx/%E5%9B%BE%E7%89%87%E5%90%8D.jpg">你想输入的替代文字</a>：插入图片</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2021/03/14/GitHack/</url>
-    <content><![CDATA[<p>1.进入GitHack目录</p>
-<p>2.输入 python  GitHack.py   网址/.git[使用GitHack脚本查看是否有git泄露]</p>
 ]]></content>
   </entry>
   <entry>
@@ -164,16 +164,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2021/03/14/Redis/</url>
-    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
-<p>2.启动客户端Redis</p>
-<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
-<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
-<p>​            </p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2021/03/14/Sqlmap/</url>
     <content><![CDATA[<p>1.参数：</p>
 <p>​      -u 【指定url】</p>
@@ -188,6 +178,16 @@
 <p>​         –random-agent  【构造随机的user-agent】</p>
 <p>​         –threads  【请求并发量】</p>
 <p>​          -r  “C:\tools….txt”  【POST注入，xxx.txt为抓包的内容】</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/Redis/</url>
+    <content><![CDATA[<p>1.Redis数据库的打开：进入Kali的/usr/redis的目录下，输入redis-server，启动服务端Redis。进入/usr/redis/redis.conf设置Redis相关配置</p>
+<p>2.启动客户端Redis</p>
+<p>​           &lt;1&gt;远程连接：redis-cli   -h   IP  -p  Port  -a  Password</p>
+<p>​            &lt;2&gt;本地连接：redis-cli   -h  127.0.0.1  -p   6379  -a  Lhh….</p>
+<p>​            </p>
 ]]></content>
   </entry>
   <entry>
@@ -260,17 +260,6 @@
   </entry>
   <entry>
     <title></title>
-    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
-    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
-<p>2.sh文件权限不够：chmod +x  **.sh</p>
-<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
-<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
-<p>5.tomcat的用户名和密码都是tomcat</p>
-<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>/2021/03/14/msf/</url>
     <content><![CDATA[<p>1.msf与shodan的结合【仅仅search shodan就可以】</p>
 <p>2.msf搜索enable_rdp【RDP远程桌面协议，用来连接远程桌面；Win7的icbug用户名为icbug,ps为******】</p>
@@ -294,6 +283,17 @@
 <p>​                nexpose_scan IP:扫描IP</p>
 <p>​                db_hosts  -c  address :显示扫描漏洞的粗略信息</p>
 <p>​                 db_vulns:显示漏洞的详细信息</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
+<p>2.sh文件权限不够：chmod +x  **.sh</p>
+<p>3.Windows中进入cmd，输入systeminfo查看补丁信息。</p>
+<p>4.JAWS为CCTV网络摄像头的关键【shodan搜索JAWS】</p>
+<p>5.tomcat的用户名和密码都是tomcat</p>
+<p>6.chmod 777 file1【类似于chmod a+rwx file1】【r=4,w=2,x=1】</p>
 ]]></content>
   </entry>
   <entry>
