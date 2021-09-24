@@ -267,14 +267,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>123</title>
-    <url>/2021/09/24/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<p>LW</p>
-<p>DGD-Homework-6</p>
-<p><img src="/images/5.jpg" alt="5"></p>
-]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/2021/03/14/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/</url>
     <content><![CDATA[<p>1.后缀为.bak的文件是备份文件，打开时将.bak改为.txt即可。</p>
@@ -376,17 +368,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>456</title>
-    <url>/2021/09/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<p>LW</p>
-<p>CO-homework-6</p>
-<p><img src="/images/1.png" alt="1"></p>
-<p><img src="/images/2.png" alt="2"></p>
-<p><img src="/images/3.png" alt="3"></p>
-<p><img src="/images/4.jpg" alt="4"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>计算机网络</title>
     <url>/2021/03/15/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
     <content><![CDATA[<p>1.IP数据报的格式：版本包括IPV4和IPV6；总长度包括首部长度和数据部分长度。</p>
@@ -445,5 +426,24 @@
       <tags>
         <tag>计算机网络</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>123</title>
+    <url>/2021/09/24/123/</url>
+    <content><![CDATA[<p>LW</p>
+<p>DGD-Homework-6</p>
+<p><img src="/images/5.jpg" alt="5"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>456</title>
+    <url>/2021/09/24/456/</url>
+    <content><![CDATA[<p>LW</p>
+<p>CO-homework-6</p>
+<p><img src="/images/1.png" alt="1"></p>
+<p><img src="/images/2.png" alt="2"></p>
+<p><img src="/images/3.png" alt="3"></p>
+<p><img src="/images/4.jpg" alt="4"></p>
+]]></content>
   </entry>
 </search>
